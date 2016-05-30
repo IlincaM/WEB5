@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/includes/style2.css">
+        <title>Travel bog</title>
+    </head>
+    <body>
+        <div class="menu">
+
+            <div>
+                <nav class="menu_wrapper">
+                    <ul class="clearfix">
+                        <li><a class="<?php setActiveMenu('Home',$activeMenu); ?>" href="/blog/index.php">Home</a></li>
+                                          <li>
+                            <a href="#">Destinatii <span class="arrow">&#9660;</span></a>
+                            <ul class="sub-menu">
+                                <li><a class="<?php setActiveMenu('Romania',$activeMenu); ?>" href="/blog/destinatii/Romania.php">Romania</a></li>
+                                <li><a class="<?php setActiveMenu('Austria',$activeMenu); ?>" href="/blog/destinatii/Austria.php">Austria</a></li>                   
+                            </ul>
+                        </li>
+                        <li><a class="<?php setActiveMenu('Contact',$activeMenu); ?>" href="/blog/includes/contact.php">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <?php
+        function setActiveMenu($lineMenu,$activeMenu){
+            if($lineMenu===$activeMenu)
+            
+            
+            echo "active";
+        }
+        
+        // put your code here
+        ?>
+                
